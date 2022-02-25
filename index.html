@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>VUE TODOLIST</title>
@@ -29,22 +27,12 @@
     </header>
 
     <main>
-        <ul>
-            <li>ciao sono MArio
+        <ul v-for="(el,i) in todo">
+            <li>
+                {{el.text}}
                 <i class="far fa-trash-alt"></i>
             </li>
-            <li>ciao sono MArio
-                <i class="far fa-trash-alt"></i>
-            </li>
-            <li>ciao sono MArio
-                <i class="far fa-trash-alt"></i>
-            </li>
-            <li>ciao sono MArio
-                <i class="far fa-trash-alt"></i>
-            </li>
-            <li>ciao sono MArio
-                <i class="far fa-trash-alt"></i>
-            </li>
+        
         </ul>
     </main>
 
