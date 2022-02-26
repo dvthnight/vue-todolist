@@ -21,7 +21,7 @@
         <h1>TODOLIST</h1>
 
         <div class="input">
-            <input type="text" name="text" id="text" v-model="newLista">
+            <input type="text" name="text" id="text" v-model="newLista" @keyup.enter="aggiungereListe">
             <input type="button" value="invia" class="button" @click="aggiungereListe">
         </div>
     </header>
