@@ -40,7 +40,7 @@ const app = new Vue({
         aggiungereListe : function(){
             // this.newObject.newText.push(this.newLista);
             console.log(this.newLista);
-            console.log(this.todo[1].text);
+            
             console.log(this.newObject.text);
 
             this.newObject.text = this.newLista;
@@ -51,6 +51,10 @@ const app = new Vue({
             };
 
             this.newLista = "";
+        },
+
+        cancellaElLista : function(i){
+            this.todo.splice(i,1);
         }
     }
 })

@@ -28,9 +28,11 @@
 
     <main>
         <ul v-for="(el,i) in todo">
-            <li :class="{'fatta': el.done==true} ">
-                {{el.text}}
-                <i class="far fa-trash-alt"></i>
+            <li >
+                <div class="attvita" :class="{'fatta': el.done==true} ">
+                    {{el.text}}
+                </div>
+                <i id="cestino" class="far fa-trash-alt" @click="cancellaElLista(i)"></i>
             </li>
         
         </ul>
