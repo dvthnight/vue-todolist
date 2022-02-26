@@ -10,10 +10,7 @@ const app = new Vue({
         
         newLista:"",
 
-        newObject: {
-            text: "",
-            done: false,
-        },
+       
 
         todo : [
             {
@@ -40,21 +37,32 @@ const app = new Vue({
         aggiungereListe : function(){
             // this.newObject.newText.push(this.newLista);
             console.log(this.newLista);
-            
-            console.log(this.newObject.text);
 
-            this.newObject.text = this.newLista;
-            console.log(this.newObject.text);
+           const newObject =  {
+                text: this.newLista,
+                done: false,
+            }
+            
+            console.log(newObject.text);
+
+            // this.newObject.text = this.newLista;
+            // console.log(this.newObject.text);
 
             if(this.newLista){
-                this.todo.push(this.newObject);
+                this.todo.push(newObject);
             };
 
             this.newLista = "";
+            
         },
 
         cancellaElLista : function(i){
             this.todo.splice(i,1);
-        }
+        },
+
+        // attivitaSvolta : function(){
+        //     this.todo.done = true;
+        //     console.log(this.todo.done)
+        // }
     }
 })
