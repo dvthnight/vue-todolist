@@ -23,12 +23,12 @@ const app = new Vue({
 
             {
                 text: "sono Mario Ciao",
-                done: false,
+                done: true,
             },
 
             {
                 text: "sono Mario Ciao",
-                done: false,
+                done: true,
             },
 
 

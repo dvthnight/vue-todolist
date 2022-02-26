@@ -28,7 +28,7 @@
 
     <main>
         <ul v-for="(el,i) in todo">
-            <li>
+            <li :class="{'fatta': el.done==true} ">
                 {{el.text}}
                 <i class="far fa-trash-alt"></i>
             </li>
