@@ -46,7 +46,11 @@ const app = new Vue({
             this.newObject.text = this.newLista;
             console.log(this.newObject.text);
 
-            this.todo.push(this.newObject);
+            if(this.newLista){
+                this.todo.push(this.newObject);
+            };
+
+            this.newLista = "";
         }
     }
 })
